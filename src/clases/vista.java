@@ -21,12 +21,12 @@ public class vista extends javax.swing.JFrame {
     /**
      * Creates new form vista
      */
-    File archivo = new File("prueba01.dat");
+    File ARCHIVO = new File("prueba01.dat");
     DefaultTableModel tab = new DefaultTableModel();
 
     public vista() throws IOException {
         initComponents();
-        Aceso.crearFileAlumno(archivo);
+        Aceso.crearFileAlumno(ARCHIVO);
         String ti[] = {
             "Nombre ", "ID"
         };
